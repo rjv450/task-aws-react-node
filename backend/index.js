@@ -1,10 +1,12 @@
 import express from 'express';
+import { config } from 'dotenv';
+
+
+config();
 
 const app = express();
 
 app.use(express.json());
 
-// Your route handlers would go here
-// Example: app.use('/api', apiRoutes);
 
 export default app;
